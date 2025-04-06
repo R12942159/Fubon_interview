@@ -8,7 +8,7 @@ from transformers import BertTokenizer, BertForSequenceClassification, Trainer, 
 
 
 df = pd.read_csv("./data/train.csv", encoding='utf-8')
-test_df = pd.read_csv("/home/r12942159/kaggle/data/test.csv", encoding='utf-8')
+test_df = pd.read_csv("./data/test.csv", encoding='utf-8')
 
 cache_dir = os.path.expanduser("~/data_18TB/")
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', cache_dir=cache_dir)

@@ -8,7 +8,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 
 df = pd.read_csv("./data/train.csv", encoding='utf-8')
-test_df = pd.read_csv("/home/r12942159/kaggle/data/test.csv", encoding='utf-8')
+test_df = pd.read_csv("./data/test.csv", encoding='utf-8')
 
 x = df['text']
 y = df['target']
@@ -29,4 +29,4 @@ kaggle_LR = pd.DataFrame({
     'id': test_df['id'],
     'target': test_pred,
 })
-kaggle_LR.to_csv("private-test/LR.csv", index=False)
+kaggle_LR.to_csv("./results/LR.csv", index=False)

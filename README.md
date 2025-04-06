@@ -18,3 +18,21 @@ This project uses a public dataset from [Kaggle - Natural Language Processing wi
 ## 🔍 Problem Definition
 
 The task is to train a classification model that can learn from the semantic content of tweets and predict whether each tweet is disaster-related.
+
+---
+## Usage
+- **To run TF-IDF + Logistic Regression, use the following command:** <br>
+    python3 LogisticRegression.py
+
+- **To run TF-IDF + Decision Tree, use the following command:** <br>
+    python3 DecisionTree.py
+
+- **To run Llama embedding + Fully Connected, use the following command:** <br>
+    python3 Llama_emb.py
+
+- **To run BERT + Fine Tune, use the following command:** <br>
+    python3 BERT_emb.py
+
+---
+## Submission
+- Deadline: 2025/04/07 (Mon.) 10:00

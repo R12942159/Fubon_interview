@@ -13,8 +13,11 @@ from sklearn.model_selection import train_test_split
 from transformers import AutoModelForCausalLM, AutoTokenizer, TrainingArguments, Trainer
 
 
-df = pd.read_csv("/content/nlp-getting-started/train.csv", encoding='utf-8')
-test_df = pd.read_csv("/content/nlp-getting-started/test.csv", encoding='utf-8')
+from huggingface_hub import login
+login("")
+
+df = pd.read_csv("./data/train.csv", encoding='utf-8')
+test_df = pd.read_csv("./data/test.csv", encoding='utf-8')
 
 model_name = "meta-llama/Llama-3.2-1B-Instruct"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
